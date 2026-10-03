@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "raccolta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:golden_helmet"],
+            "components": {
+              "minecraft:custom_data": {"tibet": {"corona": true}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "tibet:promuovi_da_advancement"
+  }
+}
