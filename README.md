@@ -7,8 +7,9 @@ Datapack per **Minecraft Java Edition 26.2** che aggiunge una corona speciale: c
 - Aggiunge un oggetto unico, **Corona**, basato su un elmetto d'oro
 - Chi la ottiene diventa l'imperatore: riceve **+20 vita massima** (10 cuori extra)
 - La corona ha l'incantesimo **Curse of Binding** — una volta indossata, non si può più togliere (se non con la morte)
+- Ha l'incantesimo **Protection V**, oltre alla maledizione
 - Ha una rifinitura (trim) "silenzio" in oro e l'effetto glint da incantesimo
-- È **indistruttibile**: non perde durabilità, resiste a fuoco, lava, esplosioni, fulmini, cactus e altri danni, e a terra non sparisce mai (nemmeno dopo i 5 minuti in cui gli oggetti normali svaniscono). L'unica eccezione è il vuoto (cadere fuori dal mondo)
+- È **indistruttibile**: non perde durabilità e resiste a fuoco, lava, esplosioni, fulmini, cactus e altri danni. L'unica eccezione è il vuoto (cadere fuori dal mondo)
 - Quando arriva un nuovo imperatore: sottotitolo a schermo + suono dell'evocazione del Wither, per tutti i giocatori
 - Quando la corona viene **buttata a terra**, l'imperatore viene destituito: sottotitolo + suono della morte del Wither
 - Il raccoglimento della corona è **automatico**: basta trovarla (per terra, in un baule, ovunque) e prenderla in inventario — non serve indossarla subito
@@ -57,8 +58,7 @@ data/
 │       ├── promuovi_effetti.mcfunction        # titolo, suono e tag di promozione
 │       ├── promuovi_da_advancement.mcfunction # gestisce la promozione automatica da raccolta
 │       ├── controlla_corona.mcfunction        # rileva se la corona è stata buttata a terra
-│       ├── destituisci.mcfunction             # titolo, suono e tag di destituzione
-│       └── fine_cooldown.mcfunction           # evita annunci ripetuti troppo ravvicinati
+│       └── destituisci.mcfunction             # titolo, suono e tag di destituzione
 └── minecraft/
     └── tags/
         └── function/
