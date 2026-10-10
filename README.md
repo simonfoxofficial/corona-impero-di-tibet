@@ -1,4 +1,4 @@
-# Corona - Impero Di Tibet
+# Impero Di Tibet
 
 Datapack per **Minecraft Java Edition 26.2** che aggiunge una corona speciale: chi la possiede diventa "l'imperatore", ottiene più vita massima, e il suo arrivo (o la sua caduta) viene annunciato a tutto il server.
 
@@ -8,6 +8,7 @@ Datapack per **Minecraft Java Edition 26.2** che aggiunge una corona speciale: c
 - Chi la ottiene diventa l'imperatore: riceve **+20 vita massima** (10 cuori extra)
 - La corona ha l'incantesimo **Curse of Binding** — una volta indossata, non si può più togliere (se non con la morte)
 - Ha una rifinitura (trim) "silenzio" in oro e l'effetto glint da incantesimo
+- È **indistruttibile**: non perde durabilità, resiste a fuoco, lava, esplosioni, fulmini, cactus e altri danni, e a terra non sparisce mai (nemmeno dopo i 5 minuti in cui gli oggetti normali svaniscono). L'unica eccezione è il vuoto (cadere fuori dal mondo)
 - Quando arriva un nuovo imperatore: sottotitolo a schermo + suono dell'evocazione del Wither, per tutti i giocatori
 - Quando la corona viene **buttata a terra**, l'imperatore viene destituito: sottotitolo + suono della morte del Wither
 - Il raccoglimento della corona è **automatico**: basta trovarla (per terra, in un baule, ovunque) e prenderla in inventario — non serve indossarla subito
@@ -48,6 +49,9 @@ data/
 ├── tibet/
 │   ├── advancement/
 │   │   └── raccolta_corona.json       # rileva quando la corona entra nell'inventario di qualcuno
+│   ├── tags/
+│   │   └── damage_type/
+│   │       └── corona_indistruttibile.json # danni a cui la corona resiste
 │   └── function/
 │       ├── corona.mcfunction          # dà la corona a chi esegue il comando
 │       ├── promuovi_effetti.mcfunction        # titolo, suono e tag di promozione
@@ -65,3 +69,7 @@ data/
 
 - Minecraft Java Edition **26.2** (pack format 107)
 - Nessuna mod o plugin richiesto — solo vanilla/datapack
+
+## Licenza
+
+Progetto distribuito con licenza [MIT](LICENSE).

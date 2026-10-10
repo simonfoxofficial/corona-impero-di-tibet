@@ -1,0 +1,18 @@
+{
+  "values": [
+    "#minecraft:is_fire",
+    "#minecraft:is_explosion",
+    "#minecraft:is_lightning",
+    {"id": "minecraft:cactus", "required": false},
+    {"id": "minecraft:fireworks", "required": false},
+    {"id": "minecraft:wither_skull", "required": false},
+    {"id": "minecraft:wither", "required": false},
+    {"id": "minecraft:dragon_breath", "required": false},
+    {"id": "minecraft:magic", "required": false},
+    {"id": "minecraft:indirect_magic", "required": false},
+    {"id": "minecraft:falling_anvil", "required": false},
+    {"id": "minecraft:falling_block", "required": false},
+    {"id": "minecraft:falling_stalactite", "required": false},
+    {"id": "minecraft:stalagmite", "required": false}
+  ]
+}
